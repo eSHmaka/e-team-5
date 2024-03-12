@@ -19,14 +19,12 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
-    text-align: left;
    text-decoration: none;
    }
    
 
    .navigation {
        display: flex;
-       flex-direction: row;
        align-items: center;
        gap: 65px;
    }
