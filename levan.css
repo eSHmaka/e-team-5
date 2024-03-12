@@ -19,14 +19,12 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
-    text-align: left;
    text-decoration: none;
    }
    
 
    .navigation {
        display: flex;
-       flex-direction: row;
        align-items: center;
        gap: 65px;
    }
@@ -38,6 +36,30 @@
   background: #4CE0D7;
   text-decoration: none;
    }
+
+   .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 87px;
+    padding-bottom: 172px;
+   }
+
+   p {
+    font-family: Poppins;
+font-size: 26px;
+font-weight: 700;
+line-height: 39px;
+color: #262626;
+   }
+
+   .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 21px;
+   }
+   
 
    
 
