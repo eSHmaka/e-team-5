@@ -12,6 +12,8 @@
     align-items: center;
     padding-top: 37px;
     padding-bottom: 47px;
+    padding-left: 84px;
+    padding-right: 84px;
    }
    
    .nav-link {
@@ -26,7 +28,7 @@
    .navigation {
        display: flex;
        align-items: center;
-       gap: 65px;
+       gap: 60px;
    }
 
    .button {
@@ -37,15 +39,52 @@
   text-decoration: none;
    }
 
+
+  p {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #FFFFFF;
+   }
+
+   h1 {
+    font-family: Poppins;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 69px;
+    color: #FFFFFF;
+
+   }
+
+.section-1 {
+    background-image: url(assets/background1.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+span {
+  color: #4CE0D7;
+}
+
+.main-section-info {
+  padding-left: 57px;
+  padding-top: 350px;
+}
+
    .footer-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 87px;
     padding-bottom: 172px;
+    padding-left: 84px;
+    padding-right: 84px;
    }
 
-   p {
+   h2 {
     font-family: Poppins;
 font-size: 26px;
 font-weight: 700;
