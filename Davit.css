@@ -6,6 +6,10 @@
   color: #262626;
 }
 
+body {
+  background-color: #f9f9f9;
+}
+
 img {
   height: 100%;
   width: 100%;
@@ -73,7 +77,7 @@ img {
 /* First Section */
 
 .img {
-  background-image: url(./assets/background1.png);
+  background-image: url("./assets/background1.png");
   width: 1272px;
   height: 559px;
   padding-top: 218px;
@@ -205,7 +209,7 @@ h2 {
 }
 
 .img2 {
-  background-image: url(./assets/background2.png);
+  background-image: url("./assets/background2.png");
   width: 1204px;
   height: 360.3px;
   padding-top: 23px;
@@ -320,11 +324,10 @@ h4 {
   text-decoration: none;
 }
 
-.arrow-flex a:hover ,
-.arrow-flex1 a:hover{
+.arrow-flex a:hover,
+.arrow-flex1 a:hover {
   font-size: 20px;
 }
-
 
 /* Third Section Finish */
 
@@ -336,6 +339,13 @@ h4 {
 
 .fourth-section h2 {
   padding-left: 126px;
+}
+
+.fourth-section button {
+  width: 175.44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container3 {
@@ -359,7 +369,7 @@ h4 {
 }
 
 .img3 {
-  background-image: url(./assets/trending\ raw/lifestyle.png);
+  background-image: url("./assets/trending\ raw/lifestyle.png");
   width: 579.02px;
   height: 278.09px;
   padding-top: 20.67px;
@@ -368,18 +378,13 @@ h4 {
 }
 
 .img4 {
-  background-image: url(./assets/trending\ raw/summer.png);
+  background-image: url("./assets/trending\ raw/summer.png");
   width: 579.02px;
   height: 278.09px;
   padding-top: 20.67px;
   padding-left: 34.14px;
   margin-bottom: 23.34px;
   background-repeat: no-repeat;
-}
-
-.img3 button,
-.img4 button {
-  padding: 9px 50px;
 }
 
 .line3 {
@@ -467,7 +472,7 @@ h4 {
   padding: 10px 24px;
 }
 .img5 {
-  background-image: url(./assets/trending\ column/fashion.png);
+  background-image: url("./assets/trending\ column/fashion.png");
   width: 547.51px;
   height: 367.41px;
   padding-top: 25.37px;
@@ -476,7 +481,7 @@ h4 {
 }
 
 .img6 {
-  background-image: url(./assets/trending\ column/ensembles.png);
+  background-image: url("./assets/trending\ column/ensembles.png");
   width: 547.51px;
   height: 367.41px;
   padding-top: 25.37px;
@@ -485,7 +490,7 @@ h4 {
 }
 
 .img7 {
-  background-image: url(./assets/trending\ column/mentalhealth.png);
+  background-image: url("./assets/trending\ column/mentalhealth.png");
   width: 547.51px;
   height: 367.41px;
   padding-top: 25.37px;
@@ -497,10 +502,12 @@ h4 {
 
 /* Footer Start */
 
-.footer-conainer {
-  max-width: 1400px;
+.footer-container {
+  max-width: 1440px;
   margin: 0 auto;
   padding: 87px 89px 37px 84px;
+  border-radius: 40px 40px 0px 0px;
+  box-shadow: 6px 0px 6px 0px #0000000d;
 }
 
 .footer-flex {
