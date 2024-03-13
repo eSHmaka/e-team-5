@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F5F5F5 ;
+
+}
+
+/* Header */
+
+.container {
+    max-width: 1340px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.header-flex {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 18px;
+}
+
+.nav-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #262626;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.nav-link:hover {
+    color: blue;
+    
+}
+
+#button {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #4CE0D7;  
+    color: #262626;
+    text-decoration: none;
+    border-radius: 40px; 
+    border: 1px solid transparent; 
+    margin-top: 10px;
+}
+
+#button:hover {
+    color: blue;
+}
+.navigation {
+    display: flex;
+    gap: 50px;
+}
+
+
+
+/* Footer */
+
+
+.footer-container {
+    max-width: 1340px;
+    margin: auto;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #FFFFFF;
+    
+}
+
+.footer-text {
+    font-family: 'Poppins', sans-serif;
+    color: #262626;
+    text-decoration: none;
+    font-size: 26px;
+    margin: 25px;
+    background-color: #FFFFFF;
+}
+
+.custom-line {
+    margin-top: 70px;
+    color: #BCBCBC;
+}
+
+.footer-last-paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-top: 40px;
+    background-color: #FFFFFF;
+}
+
+.footer-navigation img {
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+}
+
+.Lux-Ventus-Logo img {
+    background-color: #FFFFFF;
+}
