@@ -309,15 +309,22 @@ h4 {
   height: 40px;
 }
 
-.arrow-flex p,
-.arrow-flex1 p {
+.arrow-flex a,
+.arrow-flex1 a {
   font-size: 12px;
   font-weight: 700;
   line-height: 18px;
   letter-spacing: 0.24em;
   color: #4ce0d7;
   margin: 0;
+  text-decoration: none;
 }
+
+.arrow-flex a:hover ,
+.arrow-flex1 a:hover{
+  font-size: 20px;
+}
+
 
 /* Third Section Finish */
 
