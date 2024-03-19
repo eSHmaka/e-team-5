@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  color: #262626;
 }
 
 body {
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  color: #262626;
 }
 
 img {
@@ -15,13 +15,27 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: #262626;
+}
+
 .container {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
-  padding: 37px 84px 47px;
+  padding: 0 84px;
+}
+
+.container2 {
+  padding: 0 118px;
 }
 
 /* Header Start */
+
+header {
+  padding: 37px 0;
+}
 
 .logo {
   width: 234px;
@@ -29,13 +43,34 @@ img {
   cursor: pointer;
 }
 
-.navigation {
+.logo a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.ventusBG {
+  position: relative;
+}
+
+.ventusBG::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 140px;
+  height: 20px;
+  background-color: #4ce0d7;
+  z-index: -1;
+}
+
+.navigation,
+.navigation-content {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 55px;
-  margin-left: 255px;
-  margin-right: 58px;
 }
 
 .navigation a {
@@ -78,11 +113,16 @@ img {
 
 .img {
   background-image: url("./assets/background1.png");
-  width: 1272px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 559px;
-  padding-top: 218px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   padding-left: 57px;
-  padding: 218px 588px 141px 53px;
   margin-bottom: 73px;
 }
 
@@ -98,7 +138,7 @@ img {
 }
 
 .img h1 {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 46px;
   font-weight: 400;
   line-height: 69px;
@@ -137,13 +177,15 @@ h2 {
 
 .topic-cards {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
 .topic-card {
+  background-color: white;
   border-radius: 20px;
   padding: 51px 30px 30px;
-  box-shadow: 0px 6px 6px 0px #0000000d;
+  box-shadow: 0px 3px 10px 0px #0000000d;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -183,23 +225,17 @@ h2 {
 }
 
 .topics {
-  margin-bottom: 50px;
+  padding-bottom: 87px;
+  border-bottom: 1px solid #bcbcbc;
+  margin-bottom: 52px;
 }
 
 /* Second Section Finish */
 
-.hr {
-  width: 1267px;
-  border: 1px solid #bcbcbc;
-  margin-bottom: 5.5px;
-}
-
 /* Third Section Start */
 
-.container2 {
-  max-width: 1440px;
-  margin: 0 auto 97px;
-  padding: 0 118px 32px;
+.third-section {
+  margin-bottom: 97px;
 }
 
 .boxx {
@@ -349,12 +385,10 @@ h4 {
 }
 
 .container3 {
-  max-width: 1440px;
-  margin: 0 auto 88px;
-  padding: 0 118px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 60px;
+  margin-bottom: 88px;
 }
 
 .container h2 {
@@ -368,23 +402,21 @@ h4 {
   border-radius: 20px;
 }
 
-.img3 {
-  background-image: url("./assets/trending\ raw/lifestyle.png");
-  width: 579.02px;
-  height: 278.09px;
-  padding-top: 20.67px;
-  padding-left: 34.14px;
-  margin-bottom: 23.34px;
-}
-
+.img3,
 .img4 {
-  background-image: url("./assets/trending\ raw/summer.png");
-  width: 579.02px;
+  background-image: url("./assets/trending-row/lifestyle.png");
+  width: 100%;
   height: 278.09px;
   padding-top: 20.67px;
   padding-left: 34.14px;
   margin-bottom: 23.34px;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img4 {
+  background-image: url("./assets/trending-row/summer.png");
 }
 
 .line3 {
@@ -426,11 +458,9 @@ h4 {
 }
 
 .container4 {
-  max-width: 1204px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  padding: 0;
+  align-items: center;
   gap: 50px;
 }
 
@@ -438,6 +468,7 @@ h4 {
   box-shadow: 0px 6px 6px 0px #0000000d;
   display: flex;
   height: 368px;
+  width: 1204px;
   border-radius: 20px;
 }
 
@@ -471,8 +502,10 @@ h4 {
 .mentalbutton {
   padding: 10px 24px;
 }
-.img5 {
-  background-image: url("./assets/trending\ column/fashion.png");
+.img5,
+.img6,
+.img7 {
+  background-image: url("./assets/trending-column/fashion.png");
   width: 547.51px;
   height: 367.41px;
   padding-top: 25.37px;
@@ -481,40 +514,34 @@ h4 {
 }
 
 .img6 {
-  background-image: url("./assets/trending\ column/ensembles.png");
-  width: 547.51px;
-  height: 367.41px;
-  padding-top: 25.37px;
-  padding-left: 34.14px;
-  background-repeat: no-repeat;
+  background-image: url("./assets/trending-column/ensembles.png");
 }
 
 .img7 {
-  background-image: url("./assets/trending\ column/mentalhealth.png");
-  width: 547.51px;
-  height: 367.41px;
-  padding-top: 25.37px;
-  padding-left: 34.14px;
-  background-repeat: no-repeat;
+  background-image: url("./assets/trending-column/mentalhealth.png");
 }
 
 /* Fourth Section Finish */
 
 /* Footer Start */
 
-.footer-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 87px 89px 37px 84px;
+.footer {
+  background-color: white;
   border-radius: 40px 40px 0px 0px;
   box-shadow: 6px 0px 6px 0px #0000000d;
+}
+
+.footer-container {
+  padding: 87px 0 37px;
 }
 
 .footer-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 77px;
+  padding-bottom: 77px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 34px;
 }
 
 .social {
@@ -536,14 +563,10 @@ h4 {
   width: 227px;
 }
 
-.C {
+.Copyright {
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
-}
-
-.hr2 {
-  margin-bottom: 34px;
 }
 
 /* Footer Finish */
